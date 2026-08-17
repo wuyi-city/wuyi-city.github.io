@@ -41,7 +41,7 @@
     var target;
     try { target = new URL(href, window.location.href); } catch (error) { return false; }
     if (target.origin !== window.location.origin) return false;
-    return /\/(?:search|advanced-search|paper-reader)\.html$/.test(target.pathname) || target.pathname.indexOf("/wuyi-journal/pdfs/") >= 0;
+    return /\/(?:search|advanced-search|paper-reader)(?:\.html)?$/.test(target.pathname) || target.pathname.indexOf("/wuyi-journal/pdfs/") >= 0;
   }
 
   window.WuyiJournalLogin = {
@@ -91,6 +91,7 @@
   }, true);
 
   var pageName = window.location.pathname.split("/").pop();
+  if (pageName && pageName.indexOf(".") < 0) pageName += ".html";
   if ((pageName === "search.html" || pageName === "advanced-search.html") && !loggedIn()) {
     requireLogin();
   }
