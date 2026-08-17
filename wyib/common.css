@@ -1,0 +1,152 @@
+BODY { margin: 0; padding: 16px 0 24px; background: #FFFFFF; color: #000000; font-family: "宋体"; font-size: 9pt; }
+.home-page { padding-top: 32px; }
+TD, TH, P, DIV, INPUT, SELECT, TEXTAREA { font-family: "宋体"; font-size: 9pt; }
+A:link, A:visited { color: #000000; text-decoration: none; }
+A:active { color: #FF0000; }
+A:hover { color: #FF8000; text-decoration: underline; }
+.site { width: 780px; }
+.logo { display: block; width: 600px; height: 87px; border: 0; }
+.sidepic { display: block; width: 155px; height: 87px; border: 0; }
+.grayline { height: 13px; background: #666666; }
+.datebar { height: 20px; line-height: 20px; }
+.white-link, .white-link:visited { color: #FFFFFF; }
+A.white-link:hover { color: #FFFF99; }
+.notice-label, .notice-label:hover { color: #FFFFFF; }
+.left-title { height: 18px; padding-left: 8px; color: #FFFFFF; background: #293A88; line-height: 18px; }
+.left-box { padding: 5px 5px 6px; border: 1px solid #6D6D6D; border-top: 0; line-height: 16px; }
+.left-box A { display: block; }
+.left-box .left-static-item { display: block; }
+.leadership { margin-top: 5px; padding-top: 4px; border-top: 1px dotted #999999; line-height: 17px; }
+.webmaster { margin-top: 7px; line-height: 17px; text-align: center; }
+.quick { height: 19px; padding: 0 8px; background: #82A982; color: #FFFFFF; line-height: 19px; white-space: nowrap; }
+.quick A, .quick A:visited { color: #FFFFFF; }
+.quick .dark { color: #000099; }
+.quick .quick-black { color: #000000; }
+.quick-right { float: right; }
+.front-news { border: 0; }
+.photo-cell { width: 202px; padding: 6px 0 0 2px; vertical-align: top; }
+.front-photo { width: 196px; height: 147px; border: 0; }
+.front-list { width: 296px; padding: 6px 6px 4px 7px; vertical-align: top; line-height: 16px; }
+.front-list A { display: block; color: #000066; }
+.front-list .front-static { display: block; color: #000066; }
+.login-cell { width: 99px; padding-top: 8px; text-align: center; vertical-align: top; }
+.dragon { display: block; width: 90px; height: 90px; margin: 0 auto 10px; border: 0; }
+.hot-title { margin-top: 9px; height: 18px; background: #293A88; color: #FFFFFF; text-align: center; line-height: 18px; }
+.hot-box { height: 94px; margin: 6px 3px 0; border: 0; padding: 5px 3px; text-align: center; }
+.hot-broken { display: block; width: 84px; height: 88px; margin: 2px auto 0; border: 0; }
+.directory { padding-top: 18px; }
+.dir-cell { width: 50%; height: 39px; padding: 0 10px 7px 0; vertical-align: top; line-height: 15px; }
+.dir-title, A.dir-title:link, A.dir-title:visited { color: #273981; font-size: 10pt; }
+A.dir-title:hover { color: #FF8000; text-decoration: underline; }
+.dir-links { padding-top: 2px; }
+.dir-item-line { white-space: nowrap; word-spacing: 2px; }
+.new { color: #FF0000; font-family: Arial; font-size: 8pt; font-style: italic; font-weight: bold; }
+.site-footer { width: 100%; margin-top: 48px; border-top: 2px solid #666666; }
+.site-footer TD { padding-top: 7px; color: #222222; font-family: "宋体"; font-size: 10pt; font-weight: normal; line-height: 20px; text-align: center; }
+.site-footer TR:first-child TD { padding-top: 12px; }
+.site-footer I { font-family: "宋体"; font-style: normal; font-weight: normal; }
+.site-footer .disclaimer { padding-top: 8px; color: #555555; font-size: 8pt; line-height: 16px; }
+.site-footer A, .site-footer A:visited { color: #008080; }
+.home-footer { width: 760px; margin-top: 44px; border-top: 1px solid #303880; }
+.home-footer TD { padding-top: 5px; color: #000000; font-family: "宋体"; font-size: 9pt; line-height: 19px; text-align: left; }
+.home-footer .view-note { padding-top: 9px; text-align: center; }
+.home-footer .resolution { color: #E39900; }
+.home-footer .owner { padding-top: 4px; text-align: center; }
+.home-footer .owner B { color: #000000; font-style: normal; font-weight: bold; }
+.home-footer .owner-en { color: #000000; font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; }
+.home-footer .mail-label { color: #0099FF; }
+.home-footer .contact { color: #000000; text-align: center; }
+.home-footer A, .home-footer A:visited { color: #2E892E; }
+.home-footer .disclaimer { padding-top: 8px; color: #555555; font-size: 8pt; text-align: center; }
+
+/* 遗传所内页仅保留各栏目自己的页签 */
+.institute-wordmark { width: 70%; margin: 3px auto -9px; text-align: left; font-style: italic; font-weight: bold; line-height: 28px; }
+.institute-wordmark-name { color: #FF0000; font-family: Georgia, "Times New Roman", Times, serif; font-size: 20pt; }
+.institute-wordmark-dot { color: #FF00FF; font-family: "Monotype Corsiva", cursive; font-size: 13pt; }
+.institute-wordmark-domain { color: #000000; font-family: "Monotype Corsiva", cursive; font-size: 13pt; }
+.section-title { width: 70%; padding: 13px 0 6px; color: #003399; font-size: 13pt; font-weight: bold; text-align: center; }
+.subnav { width: 70%; margin-bottom: 26px; border: 2px outset #EEEEEE; border-collapse: separate; border-spacing: 1px; }
+.subnav TD { height: 26px; padding: 0 8px; text-align: center; vertical-align: middle; background: #CCFFFF; }
+.subnav TD.on { background: #FFFF00; }
+.content { width: 70%; margin-top: 16px; line-height: 180%; }
+.content-wide { width: 70%; margin-top: 16px; line-height: 170%; }
+.rule { height: 1px; background: #808080; }
+.meta { color: #666666; font-size: 8pt; }
+.listtab { width: 70%; border-collapse: collapse; }
+.listtab TH { height: 30px; background: #CCCCFF; border: 1px solid #9999CC; font-size: 10pt; }
+.listtab TD { height: 24px; padding: 5px 8px; background: #D7D7FF; border: 1px solid #A9A9D5; font-size: 10pt; line-height: 19px; }
+.datatable { width: 70% !important; border-collapse: collapse; }
+.datatable TH { background: #CCFFFF; }
+.datatable TH { height: 30px; }
+.datatable TD, .datatable TH { border: 1px solid #999999; padding: 5px 7px; font-size: 10pt; line-height: 19px; }
+.results-summary { width: 70%; min-height: 145px; padding-top: 34px; color: #000000; font-family: "宋体"; font-size: 11pt; line-height: 180%; text-align: left; text-indent: 2em; }
+.patent-table { width: 70%; border-collapse: collapse; border: 1px solid #33CC33; background: #FFFFFF; }
+.patent-table TH, .patent-table TD { height: 28px; padding: 3px 5px; border: 1px solid #33CC33; color: #000000; font-family: "宋体"; font-size: 10.5pt; font-weight: normal; line-height: 145%; text-align: center; vertical-align: middle; }
+.patent-table TH { height: 34px; font-weight: bold; }
+.patent-table TD.patent-name { text-align: left; }
+.exchange-summary { width: 70%; min-height: 145px; padding-top: 34px; color: #000000; font-family: "宋体"; font-size: 11pt; line-height: 180%; text-align: left; text-indent: 2em; }
+.exchange-conference-table { width: 70%; border: 2px outset #C0C0C0; border-collapse: separate; border-spacing: 2px; background: #EBFFD7; }
+.exchange-conference-table TH, .exchange-conference-table TD { height: 28px; padding: 3px 7px; border: 1px inset #C0C0C0; background: #EBFFD7; font-family: "宋体"; font-size: 10pt; line-height: 150%; }
+.exchange-conference-table TH { font-weight: bold; text-align: center; }
+.exchange-conference-table TD:first-child { text-align: center; }
+.exchange-guest-table { width: 70%; border: 2px outset #C0C0C0; border-collapse: separate; border-spacing: 1px; background: #FFFFCC; }
+.exchange-guest-table TH, .exchange-guest-table TD { height: 27px; padding: 3px 5px; border: 1px inset #C0C0C0; background: #FFFFCC; font-family: "宋体"; font-size: 10pt; font-weight: normal; line-height: 150%; text-align: center; }
+.alt { background: #F2F2F2; }
+.backline { width: 70%; margin-top: 18px; border-top: 1px solid #999999; padding-top: 5px; text-align: center; }
+
+/* 2000年前后科研院所招聘长页 */
+.recruit-page { width: 70%; margin: 0 auto; }
+.recruit-institute, .recruit-heading { margin: 10px 0 0; color: #FF0000; font-family: "楷体_GB2312", "楷体"; font-size: 20pt; font-weight: normal; text-align: center; }
+.recruit-heading { margin-top: 6px; }
+.recruit-rule { width: 90%; height: 1px; margin: 14px auto 20px; border-top: 1px solid #777777; }
+.recruit-kind { margin: 0 0 14px; font-family: "宋体"; font-size: 18pt; font-weight: bold; text-align: center; }
+.recruit-section { width: 100%; margin: 0 auto 72px; color: #000000; font-family: "宋体"; font-size: 12pt; line-height: 1.7; }
+.recruit-section H2 { margin: 0 0 13px; font-family: "宋体"; font-size: 12pt; font-weight: normal; text-align: center; }
+.recruit-section P { margin: 9px 0; font-family: "宋体"; font-size: 12pt; line-height: 1.7; text-indent: 24pt; }
+.recruit-section .recruit-label { text-indent: 0; }
+.recruit-section .recruit-item { margin-left: 36pt; text-indent: -36pt; }
+.recruit-section .recruit-date { text-align: right; text-indent: 0; }
+.recruit-separator { width: 100%; height: 1px; margin: 0 auto 42px; border-top: 1px solid #999999; }
+
+/* 新闻、公告统一正文页 */
+.news-article { width: 70%; margin: 18px auto 0; }
+.news-article-title { padding: 12px 20px 9px; color: #003399; font-size: 16pt; font-weight: bold; line-height: 150%; text-align: center; }
+.news-article-meta { margin-bottom: 20px; padding: 0 0 10px; border-bottom: 1px solid #999999; color: #666666; font-size: 10pt; text-align: center; }
+.news-article-body { min-height: 160px; color: #000000; font-size: 11pt; line-height: 190%; text-align: left; }
+.news-article-body P { margin: 10px 0; font-size: 11pt; line-height: 190%; text-indent: 22pt; }
+.news-article-body .no-indent { text-indent: 0; }
+.news-article-photo { margin: 18px 0 20px; text-align: center; }
+.news-article-photo img { display: inline-block; max-width: 100%; height: auto; border: 1px solid #666666; }
+
+/* 新闻报道列表：参照 2001 年遗传所新闻页的淡紫色双列表格 */
+.news-channel-nav { width: 80%; margin: 0 auto; border-collapse: separate; border-spacing: 2px; }
+.news-channel-nav TD { width: 25%; height: 25px; border: 1px solid #777799; background: #CCCCFF; text-align: center; vertical-align: middle; }
+.news-channel-nav TD.on { background: #9999FF; }
+.news-channel-nav A, .news-channel-nav A:visited { color: #0000FF; }
+.news-list-rule { width: 80%; height: 1px; margin: 12px auto 16px; border: 0; border-top: 1px solid #777777; }
+.news-list-table { width: 80%; margin: 0 auto; border-collapse: collapse; }
+.news-list-table TH, .news-list-table TD { border: 1px solid #8888AA; background: #CCCCFF; font-family: "宋体"; font-size: 10pt; line-height: 150%; }
+.news-list-table TH { height: 42px; font-weight: bold; text-align: center; }
+.news-list-table TD { min-height: 25px; padding: 7px 9px; }
+.news-list-table .news-seq { width: 12%; padding-left: 0; padding-right: 0; text-align: center; }
+.news-list-table .news-time { width: 18%; padding-left: 0; padding-right: 0; text-align: center; white-space: nowrap; }
+.news-list-table A, .news-list-table A:visited { color: #0000FF; }
+.news-list-table TD.news-static-title { color: #0000FF; }
+.academic-list-table A, .academic-list-table A:visited,
+.institute-list-table A, .institute-list-table A:visited { text-decoration: underline; }
+
+/* 参考世纪之交科研院所旧站的专题表格 */
+.equipment-table { width: 70%; border-collapse: separate; border-spacing: 2px; border: 1px outset #808080; background: #FFFFFF; }
+.equipment-title { margin-bottom: 22px; padding-top: 18px; padding-bottom: 8px; color: #000000; font-family: "黑体"; font-size: 18pt; font-weight: bold; }
+.equipment-table TH, .equipment-table TD { height: 27px; padding: 4px 5px; border: 1px inset #808080; background: #FFFFFF; font-family: "宋体"; font-size: 12pt; line-height: 170%; text-align: center; }
+.equipment-table TH { height: 38px; font-weight: normal; }
+.research-team-table { width: 70%; border: 3px solid #33CC00; border-collapse: separate; border-spacing: 2px; background: #CCFFCC; }
+.research-team-table TH, .research-team-table TD { padding: 8px 10px; border: 1px solid #FF33FF; font-family: "宋体"; font-size: 11pt; line-height: 165%; }
+.research-team-table TH { background: #00FFCC; font-weight: bold; text-align: center; }
+.research-team-table TD { background: #CCFFCC; }
+.research-team-table TD.team-name { width: 25%; background: #00FFCC; text-align: center; }
+.research-team-table TD.team-head { width: 23%; text-align: center; }
+.research-field-table { width: 80%; border-collapse: separate; border-spacing: 2px; border: 1px outset #808080; background: #FFFFFF; }
+.research-field-table TD { height: 27px; padding: 0; border: 1px inset #808080; background: #FFFFFF; font-family: "宋体"; font-size: 10pt; line-height: 150%; text-align: center; vertical-align: middle; }
+.research-field-table .field-no { width: 7%; }
+.research-field-table .field-name { width: 38%; }

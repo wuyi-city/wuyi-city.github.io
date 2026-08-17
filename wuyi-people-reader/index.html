@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>五义人物志</title>
+<link rel="stylesheet" type="text/css" href="/wuyi-people-reader/reader-assets/document-reader.css" />
+</head>
+<body>
+<div class="reader">
+  <div class="reader-head"><h1 id="pageTitle">五义人物志</h1><span>Basic HTML Version</span></div>
+  <div class="reader-stage" id="readerStage">
+    <button class="reader-turn reader-prev" id="readerPrev" type="button" aria-label="上一页">‹</button>
+    <div class="reader-page" id="readerPage"><img id="readerImage" src="" alt="" /></div>
+    <div class="reader-empty" id="readerEmpty" style="display:none"></div>
+    <button class="reader-turn reader-next" id="readerNext" type="button" aria-label="下一页">›</button>
+  </div>
+  <form class="reader-foot" id="readerForm">
+    <span class="reader-quick" id="readerQuick"></span>
+    <label for="pageInput">页码：</label><input id="pageInput" type="text" value="1" maxlength="3" />
+    <span> / <span id="readerTotal">228</span></span><button class="goto-button" type="submit">转到</button>
+    <span class="zoom-controls"><button id="zoomOut" type="button" title="缩小">－</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" type="button" title="放大">＋</button></span>
+  </form>
+</div>
+<script type="text/javascript" src="/wuyi-people-reader/reader-assets/png-reader.js"></script>
+<script type="text/javascript">
+PngReader.init({
+  title:"五义人物志",
+  documentTitle:"五义人物志",
+  totalPages:228,
+  quickPages:[1],
+  initialPage:1,
+  navigateArrows:true,
+  adjacentArrowsOnly:true,
+  resetZoomOnPageChange:true,
+  aspect:"856 / 1208",
+  pages:{
+    1:"/wuyi-people-reader/images/page-1.png",
+    2:"/wuyi-people-reader/images/page-2.png",
+    205:"/wuyi-people-reader/images/page-205.png",
+    206:"/wuyi-people-reader/images/page-206.png",
+    207:"/wuyi-people-reader/images/page-207.png"
+  }
+});
+</script>
+</body>
+</html>

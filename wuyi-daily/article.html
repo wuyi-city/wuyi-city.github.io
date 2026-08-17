@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <title>五义日报数字报</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="daily-site">
+    <section class="daily-reader article-reader">
+      <header class="daily-brand">
+        <img class="daily-promo" src="images/pic01.png" alt="" />
+        <img class="daily-logo" src="images/title.png" alt="五义日报" />
+        <button class="home-link" id="homeLink" type="button">回到首页</button>
+      </header>
+      <div class="date-bar">
+        <form class="daily-search" action="search.html" method="get" target="_blank">
+          <label class="sr-only" for="dailySearchKey">检索报纸标题</label>
+          <input id="dailySearchKey" name="key" type="text" maxlength="40" autocomplete="off" />
+          <button type="submit">搜 索</button>
+        </form>
+        <strong id="issueDate"></strong>
+        <span><button type="button" id="previousIssue">上一期</button><button type="button" id="nextIssue">下一期</button></span>
+      </div>
+      <div class="article-workspace">
+        <section class="preview-column" id="articlePreview"></section>
+        <article class="article-content" id="articleContent"></article>
+      </div>
+      <footer class="daily-footer">
+        <p>五义日报社五义日报版权所有 Copyright 2008-2013 五义日报社</p>
+        <p>本网站为虚构故事互动作品，页面所涉机构、人物、报刊与文献均为虚构内容，请勿作为现实资料使用</p>
+      </footer>
+    </section>
+  </main>
+  <script src="data.js"></script>
+  <script src="article.js"></script>
+</body>
+</html>

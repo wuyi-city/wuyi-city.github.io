@@ -1,0 +1,37 @@
+BODY { margin: 0; padding: 18px 0 24px; background: #FFFFFF; color: #000000; }
+.english-home-page { padding-top: 38px; }
+.english-inner-page { padding-top: 38px; }
+BODY, TD, P, DIV { font-family: "Arial Narrow", Arial, sans-serif; font-size: 11pt; }
+A:link, A:visited { color: #000080; text-decoration: none; }
+A:hover { color: #FF9800; font-weight: bold; }
+.name-banner { display: block; width: 600px; height: 87px; border: 0; }
+.english-home-title { display: block; width: 639px; height: 35px; border: 0; }
+.english-inner-page .inner-page { margin-top: 44px; }
+.english-inner-page .lab-list { margin-top: 44px; }
+.home-table { width: 605px; margin: 34px auto 0; table-layout: fixed; }
+.home-photo-cell { width: 221px; padding-top: 3px; text-align: center; vertical-align: top; }
+.home-photo { width: 180px; height: 240px; border: 0; }
+.home-gap { width: 24px; padding: 0; }
+.home-menu { width: 180px; height: 240px; padding: 0; vertical-align: middle; }
+.home-menu P { height: 24px; margin: 0 0 20px; }
+.home-menu P:last-child { margin-bottom: 0; }
+.home-menu A, .fake-link { display: inline-block; color: #000080; font-family: "Arial Narrow", Arial, sans-serif; font-size: 12pt; font-weight: bold; text-decoration: underline; transform-origin: left center; }
+.home-menu A:hover { color: #FF9800; font-size: 12pt; font-weight: bold; text-decoration: underline; transform: scale(1.2); }
+.fake-link { cursor: default; }
+.red-rule { width: 100%; height: 1px; margin-top: 48px; border: 0; background: #FF0000; color: #FF0000; }
+.english-contact { margin: 8px 0 0; text-align: center; font-family: "Arial Narrow", Arial, sans-serif; font-size: 10pt; }
+.english-disclaimer { margin-top: 9px; color: #666666; text-align: center; font-size: 9pt; }
+.english-home-link { margin: 46px 0 24px; text-align: center; }
+.english-home-link A:link, .english-home-link A:visited { color: #000080; font-family: "Arial Narrow", Arial, sans-serif; font-size: 13pt; font-weight: bold; text-decoration: underline; }
+.english-home-link A:hover { color: #FF9800; text-decoration: underline; }
+.inner-page { width: 76%; margin: 38px auto 0; }
+.inner-title { margin: 0 0 28px; color: #000000; font-family: "Times New Roman", serif; font-size: 18pt; font-weight: bold; text-align: center; }
+.inner-text { font-family: "Times New Roman", serif; font-size: 13pt; line-height: 165%; text-align: justify; }
+.inner-text P { font-family: "Times New Roman", serif; font-size: 13pt; line-height: 165%; text-indent: 2em; }
+.lab-list { margin-top: 42px; text-align: center; }
+.lab-list P { margin: 0 0 20px; }
+.lab-list A { font-family: "Times New Roman", serif; font-size: 14pt; font-weight: bold; }
+.leader-table { margin: 42px auto 0; }
+.leader-table TD { padding: 5px 14px; font-family: "Arial Narrow", Arial, sans-serif; font-size: 12pt; font-weight: bold; }
+.director-table { width: 520px; margin: 38px auto 0; border-collapse: collapse; }
+.director-table TD { padding: 6px 9px; border-bottom: 1px solid #CCCCCC; font-family: "Arial Narrow", Arial, sans-serif; font-size: 12pt; }

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>论文在线阅读</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="/wuyi-journal/reader-assets/document-reader.css" />
+</head>
+<body>
+<div class="reader">
+  <div class="reader-head"><h1 id="pageTitle">论文在线阅读</h1><span>Basic HTML Version</span></div>
+  <div class="reader-stage" id="readerStage">
+    <button class="reader-turn reader-prev" id="readerPrev" type="button" aria-label="上一页">‹</button>
+    <div class="reader-page pdf-reader-page" id="readerPage"><canvas id="readerCanvas"></canvas></div>
+    <div class="reader-empty" id="readerEmpty" style="display:none"></div>
+    <button class="reader-turn reader-next" id="readerNext" type="button" aria-label="下一页">›</button>
+  </div>
+  <form class="reader-foot" id="readerForm">
+    <span class="reader-quick" id="readerQuick"></span>
+    <label for="pageInput">页码：</label><input id="pageInput" type="text" value="1" maxlength="4" />
+    <span> / <span id="readerTotal">1</span></span><button class="goto-button" type="submit">转到</button>
+    <span class="zoom-controls"><button id="zoomOut" type="button" title="缩小">－</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" type="button" title="放大">＋</button></span>
+  </form>
+</div>
+<script type="text/javascript" src="authors.js?v=20260813a"></script>
+<script type="text/javascript" src="papers.js?v=20260813a"></script>
+<script type="text/javascript" src="journal-data.js?v=20260813a"></script>
+<script type="text/javascript" src="journal-login.js?v=20260817c"></script>
+<script type="module" src="pdf-reader.js?v=20260817a"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章详细信息</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<style type="text/css">
+html,body,div,ul,li,h1,h2,h3,h4,p { margin:0; padding:0; }
+body { min-width:960px; color:#111; background:#fff; font:12px/1.65 "宋体",SimSun,serif; }
+a { color:#1280a4; text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul { list-style:none; }
+.paper-header { position:relative; height:87px; border-bottom:1px solid #b7b7b7; background:#eeeeee; }
+.journal-meta { position:absolute; left:33px; top:17px; }
+.journal-meta h1 { color:#111; font:700 20px/1.35 "黑体",SimHei,sans-serif; }
+.journal-meta h2 { margin-top:5px; color:#111; font:12px/1.3 Arial,"宋体",SimSun,sans-serif; }
+.top-actions { position:absolute; right:12px; top:8px; color:#222; font-size:11px; }
+.top-actions a { color:#222; }
+.paper-nav { position:absolute; right:74px; bottom:-1px; min-width:190px; height:20px; padding:0 16px; background:#1186b2; color:#fff; text-align:center; line-height:20px; }
+.paper-nav a { color:#fff; }
+.paper-layout { display:table; box-sizing:border-box; width:100%; min-height:540px; padding:30px 8px 25px 18px; table-layout:fixed; }
+.article-main { display:table-cell; padding-right:38px; vertical-align:top; }
+.article-head { padding:0 9px 7px; border-bottom:1px solid #bebebe; }
+.article-title { color:#134c61; font:700 15px/1.65 Arial,"宋体",SimSun,sans-serif; }
+.article-title .english-title { display:block; color:#134c61; }
+.article-authors { margin-top:11px; color:#111; font-weight:bold; }
+.article-units { margin-top:12px; color:#222; line-height:21px; }
+.article-body { padding:12px 9px 0; }
+.field-row { margin:6px 0; color:#111; text-align:justify; }
+.field-row strong { font-weight:bold; }
+.abstract-text { min-height:20px; }
+.article-identifiers { margin-top:9px; color:#555; }
+.reference-area { margin-top:23px; padding:17px 9px 0; border-top:1px solid #bebebe; }
+.reference-area h4 { margin-bottom:12px; font-size:12px; }
+.reference-list { padding-left:28px; }
+.reference-list li { margin:3px 0; list-style:none; }
+.reference-empty { min-height:126px; }
+.extended { display:table-cell; width:170px; padding-top:46px; vertical-align:top; }
+.extended-title { height:21px; padding-left:8px; color:#fff; background:linear-gradient(#575757,#282828); font-weight:bold; line-height:21px; }
+.extended-section-title { position:relative; height:30px; padding-left:13px; color:#666; background:#efefef; font-weight:bold; line-height:30px; }
+.extended-section-title:before { position:absolute; left:3px; top:12px; width:6px; height:6px; border-radius:50%; background:#ffb500; content:""; }
+.extended-list { min-height:32px; padding:4px 10px 7px; background:#fafafa; }
+.extended-list li { min-height:25px; line-height:25px; }
+.extended-list .disabled { color:#888; }
+.extended-empty { min-height:28px; background:#fafafa; }
+.unavailable { margin:36px auto; padding:24px; border:1px solid #d3d3d3; background:#f7f7f7; color:#777; text-align:center; }
+.paper-footer { margin:0 180px 0 18px; padding:10px 0 18px; border-top:1px solid #c7c7c7; color:#333; text-align:center; }
+@media print { .top-actions,.paper-nav,.extended { display:none; }.article-main { padding-right:0; }.paper-footer { margin-right:18px; } }
+</style>
+</head>
+<body>
+<div class="paper-header">
+  <div class="journal-meta"><h1>五义学院学报(自然科学版)</h1><h2 id="issueHeading">文章详细信息</h2></div>
+  <div class="top-actions">[<a href="javascript:void(0)" onclick="window.print()">打印本页</a>] [<a href="index.html">关闭</a>]</div>
+  <div class="paper-nav"><a href="advanced-search.html">高级检索(Advanced Search)</a></div>
+</div>
+<div class="paper-layout">
+  <div class="article-main" id="paperContent"></div>
+  <div class="extended">
+    <div class="extended-title">扩展功能</div>
+    <div class="extended-section-title">本文信息</div>
+    <ul class="extended-list" id="paperInfoLinks"></ul>
+    <div class="extended-section-title">本文作者相关文章</div>
+    <ul class="extended-list" id="authorRelatedLinks"></ul>
+    <div class="extended-section-title">分享</div>
+    <div class="extended-empty"></div>
+  </div>
+</div>
+<div class="paper-footer">Copyright by 五义学院学报(自然科学版)</div>
+<script type="text/javascript" src="authors.js?v=20260813a"></script>
+<script type="text/javascript" src="papers.js?v=20260813a"></script>
+<script type="text/javascript" src="journal-data.js?v=20260813a"></script>
+<script type="text/javascript">
+(function () {
+  function escapeText(value) { var node=document.createElement("div"); node.appendChild(document.createTextNode(value==null?"":String(value))); return node.innerHTML; }
+  function uniqueUnits(paper) {
+    var units=[];
+    for(var i=0;i<paper.authorIds.length;i++) {
+      var unit=journalAuthor(paper.authorIds[i]).unit;
+      var exists=false;
+      for(var j=0;j<units.length;j++) if(units[j]===unit) exists=true;
+      if(unit&&!exists) units[units.length]=unit;
+    }
+    return units;
+  }
+  function headerIssueText(paper) { return paper.year + ", " + journalVolumeText(paper) + "(" + paper.issue + ") " + paper.pages; }
+
+  var params=new URLSearchParams(window.location.search);
+  var paper=journalPaperById(params.get("id")||"");
+  var target=document.getElementById("paperContent");
+  var info=document.getElementById("paperInfoLinks");
+  var authorRelated=document.getElementById("authorRelatedLinks");
+  if(!paper) {
+    target.innerHTML="<div class=\"unavailable\">未找到该文章记录。</div>";
+    return;
+  }
+
+  document.getElementById("issueHeading").innerHTML=escapeText(headerIssueText(paper));
+  var units=uniqueUnits(paper);
+  var unitsHtml="";
+  for(var i=0;i<units.length;i++) unitsHtml+="<li>"+(i+1)+":"+escapeText(units[i])+"</li>";
+  var englishTitle=paper.englishTitle?"<span class=\"english-title\">"+escapeText(paper.englishTitle)+"</span>":"";
+  var received=paper.received?"<p class=\"field-row\"><strong>收稿日期(Received):</strong> "+escapeText(paper.received)+"</p>":"";
+  var fund=paper.fund?"<p class=\"field-row\"><strong>基金项目(Foundation):</strong> "+escapeText(paper.fund)+"</p>":"";
+  var references="";
+  if(paper.references&&paper.references.length) {
+    for(var r=0;r<paper.references.length;r++) references+="<li>["+(r+1)+"]"+escapeText(paper.references[r])+"</li>";
+  }
+  target.innerHTML="<div class=\"article-head\"><h3 class=\"article-title\">"+escapeText(paper.title)+englishTitle+"</h3><h4 class=\"article-authors\">"+escapeText(journalAuthorNames(paper))+"</h4><ul class=\"article-units\">"+unitsHtml+"</ul></div>"+
+    "<div class=\"article-body\"><p class=\"field-row abstract-text\"><strong>摘要(Abstract)：</strong> "+escapeText(paper.abstract||"")+"</p><p class=\"field-row\"><strong>关键词(KeyWords)：</strong> "+escapeText(paper.keywords||"")+"</p>"+received+fund+"<p class=\"field-row\"><strong>作者(Author):</strong> "+escapeText(journalAuthorNames(paper))+"</p></div>"+
+    "<div class=\"reference-area\"><h4>参考文献(References)：</h4>"+(references?"<ul class=\"reference-list\">"+references+"</ul>":"<div class=\"reference-empty\"></div>")+"</div>";
+
+  var infoHtml="";
+  if(paper.pdfUrl) infoHtml+="<li><a href=\"paper-reader.html?id="+encodeURIComponent(paper.id)+"\" target=\"_blank\">在线阅读</a></li>";
+  if(paper.pdfUrl) infoHtml+="<li><a href=\""+escapeText(paper.pdfUrl)+"\" download=\"\">PDF("+escapeText(paper.fileSize||"")+")</a></li>";
+  else infoHtml+="<li><span class=\"disabled\">PDF("+escapeText(paper.fileSize||"")+")</span></li>";
+  info.innerHTML=infoHtml;
+
+  var authorHtml="";
+  for(var a=0;a<paper.authorIds.length;a++) {
+    var author=journalAuthor(paper.authorIds[a]);
+    authorHtml+="<li><a href=\"search.html?advanced=1&amp;author="+encodeURIComponent(author.name)+"\" target=\"_blank\">"+escapeText(author.name)+"</a></li>";
+  }
+  authorRelated.innerHTML=authorHtml;
+}());
+</script>
+<script type="text/javascript" src="journal-login.js?v=20260817c"></script>
+</body>
+</html>
+
+
+
+

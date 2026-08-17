@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>五义市图书馆-登录</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="journal-login.css?v=20260812e" />
+</head>
+<body class="journal-login-page">
+  <div class="journal-login-box">
+    <div class="journal-login-head">五义市图书馆</div>
+    <div class="journal-login-system-name">电子资源馆外访问系统</div>
+    <form id="readerLoginForm" class="journal-login-form">
+      <div class="journal-login-row"><label for="readerNumber">账号：</label><input id="readerNumber" type="text" /></div>
+      <div class="journal-login-row"><label for="readerPassword">密码：</label><input id="readerPassword" type="password" /></div>
+      <p id="loginError" class="journal-login-error"></p>
+      <div class="journal-login-actions"><button id="loginButton" type="submit">登 录</button></div>
+    </form>
+  </div>
+<script type="text/javascript">
+(function () {
+  var form = document.getElementById("readerLoginForm");
+  var saltText = "VI6LaEdnPBbfbQbalLHq/A==";
+  var expectedText = "KSQv122b+2uQfVYDVBNDZUx1uSo2fnNqsB9LOsKwotg=";
+  var iterations = 180000;
+  var returnUrl = new URLSearchParams(window.location.search).get("return") || "";
+  function decode(text) { var raw = window.atob(text), bytes = new Uint8Array(raw.length); for (var i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i); return bytes; }
+  function equal(left, right) { if (left.length !== right.length) return false; var difference = 0; for (var i = 0; i < left.length; i++) difference |= left[i] ^ right[i]; return difference === 0; }
+  function verify(number, password) {
+    var input = new TextEncoder().encode(number + "\u0000" + password);
+    return window.crypto.subtle.importKey("raw", input, "PBKDF2", false, ["deriveBits"]).then(function (key) {
+      return window.crypto.subtle.deriveBits({ name:"PBKDF2", salt:decode(saltText), iterations:iterations, hash:"SHA-256" }, key, 256);
+    }).then(function (bits) { return equal(new Uint8Array(bits), decode(expectedText)); });
+  }
+  document.getElementById("readerNumber").focus();
+  form.onsubmit = function () {
+    var number = document.getElementById("readerNumber").value.replace(/^\s+|\s+$/g, "");
+    var password = document.getElementById("readerPassword").value;
+    var error = document.getElementById("loginError");
+    var button = document.getElementById("loginButton");
+    if (!number || !password) { error.innerHTML = "请输入账号和密码。"; return false; }
+    error.innerHTML = "";
+    button.disabled = true;
+    button.innerHTML = "登录中……";
+    verify(number, password).then(function (valid) {
+      if (!valid) { error.innerHTML = "账号或密码不正确。"; button.disabled = false; button.innerHTML = "登 录"; return; }
+      document.cookie = "wuyi-journal-reader-login=1; path=/wuyi-journal/; SameSite=Lax";
+      if (window.opener && !window.opener.closed) {
+        window.opener.postMessage("wuyi-journal-login-success", window.location.origin);
+        window.close();
+        return;
+      }
+      window.location.href = returnUrl.indexOf("/wuyi-journal/") === 0 ? returnUrl : "index.html";
+    }).catch(function () { error.innerHTML = "登录验证失败，请稍后再试。"; button.disabled = false; button.innerHTML = "登 录"; });
+    return false;
+  };
+})();
+</script>
+</body>
+</html>

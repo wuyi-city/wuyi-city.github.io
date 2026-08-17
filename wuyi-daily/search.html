@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <title>五义日报检索平台</title>
+  <link rel="stylesheet" href="search.css" />
+</head>
+<body>
+  <main class="search-site">
+    <header class="search-header">
+      <img src="images/title.png" alt="五义日报" />
+    </header>
+    <nav class="search-nav"><a href="index.html">返回首页</a></nav>
+    <section class="search-box">
+      <form id="resultSearchForm" action="search.html" method="get">
+        <label for="searchKey">请输入检索词：</label>
+        <input id="searchKey" name="key" type="text" maxlength="40" autocomplete="off" />
+        <button type="submit">检 索</button>
+      </form>
+    </section>
+    <section class="search-results">
+      <div class="result-heading"><strong>检索结果</strong><span id="resultSummary"></span></div>
+      <div id="resultList"></div>
+    </section>
+    <footer>
+      <p>五义日报社五义日报版权所有 Copyright 2008-2013 五义日报社</p>
+      <p>本网站为虚构故事互动作品，页面所涉机构、人物、报刊与文献均为虚构内容，请勿作为现实资料使用</p>
+    </footer>
+  </main>
+  <script src="data.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

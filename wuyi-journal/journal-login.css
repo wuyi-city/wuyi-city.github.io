@@ -1,0 +1,15 @@
+html,body { height:100%; }
+.journal-login-page { display:flex; align-items:center; justify-content:center; box-sizing:border-box; margin:0; padding:28px; color:#333; background:#ededed; font:13px/1.6 "宋体",SimSun,serif; }
+.journal-login-box { width:610px; border:1px solid #6f8e9f; background:#f6f8f9; box-shadow:3px 5px 15px #777; }
+.journal-login-head { height:48px; padding-left:22px; color:#fff; background:linear-gradient(#91afbf,#52778d); font:bold 20px/48px "宋体",SimSun,serif; text-shadow:0 1px #436579; }
+.journal-login-system-name { height:32px; padding-left:22px; border-bottom:1px solid #c1cdd2; color:#345d72; background:linear-gradient(#fff,#dce8ed); font:bold 14px/32px "宋体",SimSun,serif; letter-spacing:1px; }
+.journal-login-form { margin:22px 30px 20px; padding:25px 73px 23px; border:1px solid #c1cdd2; background:#fff; }
+.journal-login-row { height:39px; white-space:nowrap; }
+.journal-login-row label { display:inline-block; width:84px; text-align:right; }
+.journal-login-row input { box-sizing:border-box; width:270px; height:25px; padding:2px 5px; border:1px solid #98aab3; color:#222; background:#fff; font:13px Arial,"宋体",SimSun,sans-serif; }
+.journal-login-row input:focus { border-color:#577b8e; outline:1px solid #b4c9d2; }
+.journal-login-error { min-height:19px; margin:0 0 1px 84px; color:#a23932; }
+.journal-login-actions { margin:12px 0 0; padding-top:0; border-top:0; text-align:center; }
+.journal-login-actions button { min-width:76px; height:27px; margin:0; border:1px solid #718e9b; color:#31566a; background:linear-gradient(#fff,#c9dfe7); font:13px "宋体",SimSun,serif; cursor:pointer; }
+.journal-login-actions button:hover { background:linear-gradient(#fff,#b6d3df); }
+.journal-login-actions button:disabled { color:#777; background:#e4e8ea; cursor:default; }

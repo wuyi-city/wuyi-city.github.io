@@ -1,0 +1,50 @@
+BODY { margin: 0; padding: 0 0 24px; background: #FFFFFF; color: #000000; font-family: "宋体"; font-size: 9pt; }
+TD, P, DIV { font-family: "宋体"; font-size: 9pt; }
+A:link, A:visited { color: #000000; text-decoration: none; }
+A:hover { color: #000000; text-decoration: underline; }
+.mwrap { width: 800px; margin: 0 auto; background: #FFFFFF; border: 0; }
+.mlogo-cell { padding: 8px 0 12px; text-align: center; }
+.mlogo-cell IMG { display: block; width: 800px; height: 113px; margin: 0 auto; border: 0; }
+.mcontent { width: 800px; border: 0; border-collapse: separate; border-spacing: 0; }
+.mside { width: 220px; padding: 12px 4px 0; vertical-align: top; }
+.mside-box { width: 100%; border: 0; border-collapse: collapse; }
+.mmenu { padding: 11px 13px 16px; background: #FFFFFF; line-height: 38px; vertical-align: top; }
+.mmenu A, .mmenu B { display: block; padding-left: 4px; border: 0; color: #800000; font-size: 12pt; font-weight: normal; }
+.mmenu A:link, .mmenu A:visited { color: #800000; }
+.mmenu A:hover { color: #800000; text-decoration: underline; }
+.mmenu B { color: #800000; font-family: "宋体"; font-weight: bold; }
+.mright { width: 572px; padding: 12px 4px 0 8px; vertical-align: top; }
+.mbody { min-height: 390px; padding: 15px 18px 22px; border: 0; vertical-align: top; font-size: 10pt; line-height: 185%; }
+.mbody P { margin: 0 0 13px; font-size: 10pt; line-height: 185%; }
+.mhead { margin-bottom: 17px; padding: 4px 8px 6px; border: 0; color: #000000; font-family: "黑体"; font-size: 14pt; font-weight: normal; text-align: center; }
+.mnews-list { width: 96%; margin: 0 auto; border-collapse: collapse; }
+.mnews-list TD { padding: 8px 7px; border: 0; font-size: 11pt; }
+.mnews-list .mdate { width: 95px; color: #777777; text-align: right; }
+.mnews-list A:link, .mnews-list A:visited { color: #0000CC; }
+.mnews-list A:hover { color: #0000CC; text-decoration: underline; }
+.mpeople > P { font-size: 11pt; }
+.mprojects P { font-size: 11pt; line-height: 190%; }
+.mprojects B { font-weight: normal; }
+.mproject-meta { display: block; padding-left: 1.8em; }
+.mpublications P { font-size: 11pt; line-height: 190%; }
+.mintro P { font-size: 11pt; line-height: 190%; }
+.mintro B { font-family: "黑体"; font-weight: normal; }
+.mintro-photo { margin: 2px 0 18px; text-align: center; }
+.mintro-photo IMG { width: 288px; height: 216px; padding: 3px; border: 1px solid #666666; background: #FFFFFF; }
+.instrument-title { margin: 5px 0 7px; color: #0000CC; font-family: "黑体"; font-size: 12pt; font-weight: normal; text-align: left; }
+.instrument-card { width: 100%; margin: 0 0 24px; border: 3px double #666666; border-collapse: collapse; background: #FFFFFF; }
+.instrument-card TD { padding: 8px 10px; border: 3px double #666666; background: #FFFFFF; font-size: 11pt; line-height: 21px; }
+.instrument-card .instrument-photo { width: 55%; padding: 7px; text-align: center; vertical-align: middle; }
+.instrument-card .instrument-photo IMG { display: block; width: 230px; height: 172px; margin: 0 auto; border: 0; object-fit: contain; }
+.instrument-card .instrument-info { width: 45%; vertical-align: middle; }
+.home-footer { width: 760px; margin-top: 44px; border-top: 1px solid #303880; }
+.home-footer TD { padding-top: 5px; color: #000000; font-family: "宋体"; font-size: 9pt; line-height: 19px; text-align: left; }
+.home-footer .view-note { padding-top: 9px; text-align: center; }
+.home-footer .resolution { color: #E39900; }
+.home-footer .owner { padding-top: 4px; text-align: center; }
+.home-footer .owner B { color: #000000; font-style: normal; font-weight: bold; }
+.home-footer .owner-en { color: #000000; font-family: Arial, Helvetica, sans-serif; font-style: italic; font-weight: bold; }
+.home-footer .mail-label { color: #0099FF; }
+.home-footer .contact { color: #000000; text-align: center; }
+.home-footer A, .home-footer A:visited { color: #2E892E; }
+.home-footer .disclaimer { padding-top: 8px; color: #555555; font-size: 8pt; text-align: center; }

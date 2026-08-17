@@ -1,0 +1,22 @@
+BODY { margin: 0; padding: 24px 0 28px; background: #F7F7F7; }
+.lab-title { width: 80%; margin: 0 auto 15px; color: #0000FF; font-family: "宋体"; font-size: 22pt; text-align: center; }
+.lab-rule { width: 100%; height: 1px; margin: 0 0 20px; border: 0; border-top: 1px inset #808080; }
+.lab-page { width: 80%; margin: 0 auto; color: #0000FF; font-family: "宋体"; font-size: 12pt; line-height: 175%; }
+.lab-page P { margin: 12px 0; color: #0000FF; font-family: "宋体"; font-size: 12pt; line-height: 175%; }
+.lab-photos { width: 680px; margin: 18px auto 22px; border: 0; border-collapse: collapse; }
+.lab-photos TD { padding: 12px 20px; text-align: center; vertical-align: middle; }
+.lab-photos IMG { display: block; margin: 0 auto; }
+.lab-photos-three { width: 870px; }
+.lab-section { margin-top: 24px !important; font-weight: bold; font-size: 14pt !important; }
+.lab-staff { width: 100%; margin: 6px 0 22px; border: 0; border-collapse: collapse; }
+.lab-staff TD { padding: 3px 0; color: #0000FF; font-family: "宋体"; font-size: 12pt; line-height: 165%; }
+.lab-staff TD:first-child { width: 18%; }
+.lab-staff TD:nth-child(2) { width: 18%; }
+.lab-staff TD:last-child { width: 64%; }
+.lab-result { margin: 10px 0 15px !important; padding-left: 2em; text-indent: -2em; }
+.lab-result B { color: inherit; font-weight: bold; }
+.lab-footer { width: 100%; margin-top: 46px; border-top: 2px solid #666666; }
+.lab-footer TD { padding-top: 7px; color: #222222; font-family: "宋体"; font-size: 10pt; font-weight: normal; line-height: 20px; text-align: center; }
+.lab-footer TR:first-child TD { padding-top: 12px; }
+.lab-footer A, .lab-footer A:visited { color: #008080; }
+.lab-footer .disclaimer { padding-top: 8px; color: #555555; font-size: 8pt; line-height: 16px; }
